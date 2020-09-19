@@ -14,7 +14,7 @@ namespace RESTapi.Controllers{
         {
             _repository = repository;
         }
-
+        //Command list
         [HttpGet]
         public ActionResult <IEnumerable<Command>> GetAllCommands(){
             var commandlist = _repository.GetAllCommands();
